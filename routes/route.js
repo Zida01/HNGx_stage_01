@@ -9,7 +9,7 @@ router.get('/api', (req, res) => {
     const day = new Date()
 
     const data = {
-        slack_name: req.query.name,
+        slack_name: req.query.slack_name,
         current_day: weekday[day.getDay()],
         utc_time: day,
         track: req.query.track,
